@@ -4,7 +4,7 @@ import './assets/tailwind.css';
 import App from './App';
 import HomeView from './views/HomeView'
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route
 } from "react-router-dom";
@@ -15,14 +15,14 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename='http://figura01.github.io/weather-app-ts'>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<HomeView />} />
           <Route path="weather/:state/:city" element={<CityView />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
