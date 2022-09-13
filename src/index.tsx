@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='http://figura01.github.io/weather-app-ts'>
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<HomeView />} />
