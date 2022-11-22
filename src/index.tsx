@@ -15,11 +15,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename='http://figura01.github.io/weather-app-ts'>
+    <BrowserRouter basename='http://figura01.github.io/weather-app-ts/'>
       <Routes>
-        <Route path="/http://figura01.github.io/weather-app-ts" element={<App />}>
+        <Route path="http://figura01.github.io/weather-app-ts/" element={<App />}>
           <Route index element={<HomeView />} />
-          <Route path="/http://figura01.github.io/weather-app-ts/weather/:state/:city" element={<CityView />} />
+          <Route path="http://figura01.github.io/weather-app-ts/weather/:state/:city" element={<CityView />} />
         </Route>
       </Routes>
     </BrowserRouter>
